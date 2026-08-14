@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit User</title>
+         <link rel="stylesheet" href="/userstyle.css">
+    </head>
+    <body>
+        <h1 class="editmail">Edit Comment <%= user.EMAIL %></h1>
+    <form class="editform" method="post" action="/users/<%= user.id %>?_method=patch">
+        <div class="mein">
+            <div class="userimg" ><img src="<%=user.img%>"></div>
+             <textarea name="comment"><%= user.comment%></textarea>
+            <div class="username"><input type="text" name="id" value="<%= user.id %>"></div>
+            <div class="useremail"><input type="email" name="email" value="<%= user.email %>"></div>
+      <button>Update</button>
+                </div>
+    </form>
+    
+    </body>
+</html> 

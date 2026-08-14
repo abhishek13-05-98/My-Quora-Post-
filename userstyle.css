@@ -1,0 +1,78 @@
+body {
+    background-color: #F2F2EA;
+}
+
+.mein{
+    height: 620px;
+    width: 500px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-top: 30px;
+    background-color: rgb(230, 230, 216);
+    box-shadow: 5px 5px 5px black;
+}
+.userimg{
+    height: 400px;
+ width: 450px;
+border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+.userimg img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+form{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 25px;
+    background-color: rgb(230, 230, 216);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.usercomment {
+    height: 80px;
+    width: 450px;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+.username, .useremail{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+   .editmail{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+   }
+   .editform{
+    width: 100%;
+    height: 100%;
+   }
+   .userhead{
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: rgb(98, 8, 8)
+   }
+   .userhead:hover{
+    color: rgb(98, 8, 8);
+    font-weight: bold;
+   }
+   textarea{
+    width: 450px;
+    height: 80px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 10px;
+   }

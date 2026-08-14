@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quora</title>
+     <link rel="stylesheet" href="/userstyle.css">
+</head>
+<body>
+    <h1 class="userhead">My Quora</h1>
+    <form  class="form" method="post" action="/adduser">
+                    <button type="submit">Add New User</button>
+                </form> 
+    
+        <% for (user of users) { %>
+        <div class="mein">
+            <div class="userimg" > <img src="<%=user.img%>"></div>
+             <div class="usercomment"><%= user.comment%></div>
+            <div class="username"><%= user.id %></div>
+            <div class="useremail"><%= user.email %></div>
+           
+            
+                 <form  class="form" method="get" action="/edit/<%= user.id %>">
+                    <button type="submit">Edit</button>
+                </form>
+                
+                <form  class="form" method="get" action="/delete/<%= user.id %>">
+                    <button type="submit">Delete</button>
+                </form>
+                </div>
+                <% } %>
+             
+      

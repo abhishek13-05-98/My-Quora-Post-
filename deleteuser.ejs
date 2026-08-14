@@ -1,0 +1,40 @@
+<!-- <!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head> 
+<body>
+    <h1>Delete User</h1>
+   <h2><%= user.id %></h2> 
+    <form method="post" action="/deleteuser?_method=put">
+<input type="text" name="Email" value="<%= user.email %>" readonly> 
+<input type="text" name="Password" placeholder="Enter Password">
+<button type="submit">Delete</button>
+    </form>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Delete User</title>
+         <link rel="stylesheet" href="/userstyle.css">
+    </head>
+    <body>
+        <h1 class="editmail">Delete User <%= user.id %></h1>
+    <form class="editform" method="post" action="/delete/<%= user.id %>/verify?_method=put">
+        <div class="mein">
+            <div class="userimg" ><img src="<%=user.img%>"></div>
+            <div class="username"><input type="text" name="id" value="<%= user.id %>"></div>
+            <div class="useremail"><input type="email" name="email" value="<%= user.email %>"></div>
+            <div class="password"><input type="password" name="password" placeholder="Enter Password"></div>
+      <button>Delete</button>
+                </div>
+    </form>
+    
+    </body>
+</html> 
